@@ -3,9 +3,12 @@ import java.time.format.DateTimeFormatter
 import java.time.format.FormatStyle
 import java.util.*
 
+
 val current = LocalDateTime.now()
 val formatter = DateTimeFormatter.ofLocalizedDateTime(FormatStyle.MEDIUM)
 val formatted = current.format(formatter)
+
+
 fun main(args: Array<String>) {
     print("Wpisz swoje imie: ")
     val name = readLine()
@@ -29,6 +32,7 @@ fun main(args: Array<String>) {
     }
     print("Wpisz swój rok urodzenia: ")
     val year = readLine()
+
     println("Data i godzina: $formatted")
     println("Twoje imie: $name Twoje nazwisko: $surname")
     println("Twoja płeć: $sex")
